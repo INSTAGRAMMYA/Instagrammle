@@ -1,0 +1,16 @@
+Undangan Pernikahan Gunawan & Rafikah body { margin: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(to right, #f8f8f8, #eaeaea); color: #333; text-align: center; overflow-x: hidden; } header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.5); animation: fadeIn 2s ease-in-out; } header h1 { font-size: 3rem; margin: 0; animation: slideDown 2s ease forwards; } header p { font-size: 1.5rem; margin-top: 10px; animation: fadeIn 3s ease; } section { padding: 40px 20px; } .card { background: white; margin: 20px auto; padding: 20px; max-width: 600px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); animation: fadeInUp 1.5s ease; } .btn { display: inline-block; margin-top: 15px; padding: 12px 25px; background: #444; color: white; text-decoration: none; border-radius: 30px; transition: 0.3s; } .btn:hover { background: #222; } .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; } .modal-content { background: white; padding: 30px; border-radius: 15px; max-width: 400px; text-align: center; position: relative; } .modal-content img { max-width: 200px; margin-top: 10px; } .close { position: absolute; top: 10px; right: 15px; font-size: 20px; cursor: pointer; } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } @keyframes fadeInUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } 
+Gunawan & Rafikah
+13 & 14 September 2025
+Akad Nikah
+Sabtu, 13 September 2025
+Pukul 08:00 WIB
+<div class="card"> <h2>Resepsi</h2> <p>Minggu, 14 September 2025<br> Pukul 07:00 - selesai</p> </div> <div class="card"> <h2>Lokasi Acara</h2> <a href="https://maps.app.goo.gl/EQRXJTAUZgwjqUt96" target="_blank" class="btn">Lihat di Google Maps</a> </div> <div class="card"> <h2>Kirim Amplop Digital</h2> <button class="btn" onclick="openModal()">Buka Detail</button> </div> 
+× 
+Amplop Digital
+Bank BRI
+014701032622505
+a.n. Gunawan
+Copy Nomor Rekening 
+Atau scan QRIS berikut:
+  
+function openModal(){ document.getElementById('modal').style.display = 'flex'; } function closeModal(){ document.getElementById('modal').style.display = 'none'; } function copyRek(){ navigator.clipboard.writeText('014701032622505'); alert('Nomor rekening disalin!'); }
